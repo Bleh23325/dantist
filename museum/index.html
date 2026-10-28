@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">Добрый Медиа</div>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Главная</a>
+            <a href="components.html">Компоненты</a>
+            <a href="library.html">Библиотека</a>
+        </nav>
+        <button class="btn">Обсудить проект →</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Цифровое ремесло.<br>Измеримый результат.</h1>
+            <div class="hero-desc">
+                <p>Соединяем смыслы, поиск и рекламу в единую систему. Помогаем амбициозным брендам расти в видимости — и в доходе тоже.</p>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="img/foto1.jpg" alt="Цифровое ремесло" class="hero-image">
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="section-header">
+            <h2 class="section-title">Избранные работы</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="grid-3">
+            <div class="card">
+                <div class="card-image-frame">
+                    <img src="img/foto2.jpg" alt="БРИСКЛИ" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>БРИСКЛИ</h3>
+                    <p>Сайт · Брендинг · Реклама</p>
+                    <span class="card-link">Смотреть проект →</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image-frame">
+                    <img src="img/foto3.jpg" alt="ТРЕЙД ОВЕРСИЗ" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>ТРЕЙД ОВЕРСИЗ</h3>
+                    <p>Сайт · Стратегия · Реклама</p>
+                    <span class="card-link">Смотреть проект →</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image-frame">
+                    <img src="img/foto4.jpg" alt="ГОСТИНЫЙ ДВОР" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>ГОСТИНЫЙ ДВОР</h3>
+                    <p>Сайт · Брендинг · Стратегия</p>
+                    <span class="card-link">Смотреть проект →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h2>Начнём с вашей идеи.</h2>
+            <a href="mailto:hello@dobry.media" class="email">hello@dobry.media</a>
+        </div>
+        <div class="footer-right">
+            <button class="btn">Обсудить проект →</button>
+        </div>
+        <div class="footer-copy">
+            © 2025 Добрый Медиа <br> Санкт-Петербург
+        </div>
+    </footer>
+</div>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        if (navLinks.classList.contains('active')) {
+            menuToggle.innerHTML = '✕';
+        } else {
+            menuToggle.innerHTML = '☰';
+        }
+    });
+</script>
+
+</body>
+</html>

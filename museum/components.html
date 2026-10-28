@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ui-kit.css">
+</head>
+<body>
+<div class="container">
+    <nav class="ui-nav">
+        <a href="index.html">← На главную</a>
+        <a href="components.html" style="font-weight: bold;">Компоненты</a>
+        <a href="library.html">Библиотека</a>
+    </nav>
+
+    <h1>Компоненты и состояния</h1>
+
+    <div class="row">
+        <div class="col">
+            <div class="state-label">Default</div>
+            <button class="btn">Обсудить проект →</button>
+        </div>
+        <div class="col">
+            <div class="state-label">Hover</div>
+            <button class="btn" style="background-color: #4a2c6d;">Обсудить проект →</button>
+        </div>
+        <div class="col">
+            <div class="state-label">Focus / Active</div>
+            <button class="btn btn-focus">Обсудить проект →</button>
+        </div>
+    </div>
+
+    <h2>Карточка: интерактивные состояния</h2>
+    
+    <div class="row">
+        <div style="width: 320px;">
+            <div class="state-label">Default</div>
+            <div class="card">
+                <div class="card-image-frame"><img src="img/foto2.jpg" alt="БРИСКЛИ" class="card-img"></div>
+                <div class="card-content">
+                    <h3>БРИСКЛИ</h3>
+                    <p>Сайт · Брендинг · Реклама</p>
+                    <span class="card-link">Смотреть проект →</span>
+                </div>
+            </div>
+        </div>
+        <div style="width: 320px;">
+            <div class="state-label">Hover</div>
+            <div class="card card-hover">
+                <div class="card-image-frame"><img src="img/foto2.jpg" alt="БРИСКЛИ" class="card-img"></div>
+                <div class="card-content">
+                    <h3>БРИСКЛИ</h3>
+                    <p>Сайт · Брендинг · Реклама</p>
+                    <span class="card-link">Смотреть проект →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; width: 320px;">
+        <div class="state-label">Focus / Active</div>
+        <div class="card card-focus">
+            <div class="card-image-frame"><img src="img/foto2.jpg" alt="БРИСКЛИ" class="card-img"></div>
+            <div class="card-content">
+                <h3>БРИСКЛИ</h3>
+                <p>Сайт · Брендинг · Реклама</p>
+                <span class="card-link">Смотреть проект →</span>
+            </div>
+        </div>
+    </div>
+
+    <h2>Типографика и токены</h2>
+    <div class="row">
+        <div class="col">
+            <p style="font-family: 'Playfair Display', serif; font-size: 42px; color: #2c2c2c;">Oranienbaum Regular</p>
+            <p style="font-family: 'Playfair Display', serif; font-size: 28px; margin-top: 15px; color: #2c2c2c;">Заголовок H2</p>
+            <p style="font-family: 'Inter', sans-serif; font-size: 14px; margin-top: 15px; color: #2c2c2c;">Основной текст Inter Regular</p>
+        </div>
+        <div class="col">
+            <div class="palette-grid">
+                <div><div class="color-swatch" style="background-color: #2e1a47;"></div></div>
+                <div><div class="color-swatch" style="background-color: #f4f1eb;"></div></div>
+                <div><div class="color-swatch" style="background-color: #f9f7f2;"></div></div>
+                <div><div class="color-swatch" style="background-color: #dcd6ce;"></div></div>
+                <div><div class="color-swatch" style="background-color: #c0b8ab;"></div></div>
+                <div><div class="color-swatch" style="background-color: #ffffff;"></div></div>
+                <div><div class="color-swatch" style="background-color: #2c2c2c;"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
