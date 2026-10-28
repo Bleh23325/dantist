@@ -1,0 +1,117 @@
+.services__carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.services__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 384px; 
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  position: relative;
+  height: 410px; 
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 410px; 
+  border-radius: 24px; 
+  overflow: hidden;
+  background: #1f2d3d;
+  clip-path: path('M 0 24 Q 0 0 24 0 L 360 0 Q 384 0 384 24 L 384 340 Q 384 360 364 360 L 168 360 Q 148 360 148 380 Q 148 386 148 386 L 148 386 Q 148 410 124 410 L 24 410 Q 0 410 0 386 Z');
+}
+
+.card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #1B2338 0%, rgba(27, 35, 56, 0) 60%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card__label {
+  position: absolute;
+  left: 32px;      
+  bottom: 76px;    
+  z-index: 2;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card__actions {
+  position: absolute;
+  bottom: 0; 
+  right: 20px; 
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  z-index: 3;
+}
+
+.card__btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px; 
+  border: none;
+  border-radius: 999px; 
+  background: #2b3d5c; 
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px; 
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+.card__btn:hover {
+  background: #3a5078;
+}
+
+.card__arrow-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #2b3d5c; 
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+.card__arrow-btn:hover {
+  background: #3a5078;
+}
+
+.card__arrow {
+  font-size: 20px;
+  line-height: 1;
+  transform: translateY(-1px);
+}

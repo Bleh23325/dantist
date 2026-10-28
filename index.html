@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Дантист</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/carousel.css">
+<link rel="stylesheet" href="css/cta.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<section class="services">
+  <div class="services__header">
+    <h2 class="services__title">Услуги</h2>
+    <div class="services__controls">
+      <button class="services__nav services__nav--prev" type="button" aria-label="Назад">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="services__nav services__nav--next" type="button" aria-label="Вперед">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="services__carousel" id="carousel">
+    <article class="card">
+      <div class="card__image">
+        <img src="photos/foto1.jpg" alt="Элайнеры">
+        <span class="card__label">Элайнеры</span>
+      </div>
+      <div class="card__actions">
+        <button class="card__btn" type="button"><span class="card__btn-text">Консультация</span></button>
+        <button class="card__arrow-btn" type="button"><span class="card__arrow">›</span></button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__image">
+        <img src="photos/foto2.png" alt="Имплантация">
+        <span class="card__label">Имплантация</span>
+      </div>
+      <div class="card__actions">
+        <button class="card__btn" type="button"><span class="card__btn-text">Консультация</span></button>
+        <button class="card__arrow-btn" type="button"><span class="card__arrow">›</span></button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__image">
+        <img src="photos/foto3.jpg" alt="Брекеты">
+        <span class="card__label">Брекеты</span>
+      </div>
+      <div class="card__actions">
+        <button class="card__btn" type="button"><span class="card__btn-text">Консультация</span></button>
+        <button class="card__arrow-btn" type="button"><span class="card__arrow">›</span></button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__image">
+        <img src="photos/foto4.png" alt="Терапия">
+        <span class="card__label">Терапия</span>
+      </div>
+      <div class="card__actions">
+        <button class="card__btn" type="button"><span class="card__btn-text">Консультация</span></button>
+        <button class="card__arrow-btn" type="button"><span class="card__arrow">›</span></button>
+      </div>
+    </article>
+  </div>
+
+  <div class="cta">
+    <div class="cta__photo">
+      <img src="photos/foto5.png" alt="Девушка с элайнером">
+    </div>
+    <div class="cta__content">
+      <h3 class="cta__title">Запишитесь на бесплатную<br>консультацию прямо сейчас!</h3>
+      <p class="cta__subtitle">Хотите узнать подробнее? Наши специалисты ответят на все ваши вопросы и помогут выбрать оптимальный путь к здоровой и красивой улыбке.</p>
+      <form class="cta__form">
+        <label class="cta__field">
+          <span class="cta__field-label">Введите ФИО</span>
+          <input type="text" placeholder="ФИО">
+        </label>
+        <label class="cta__field">
+          <span class="cta__field-label">Введите номер телефона</span>
+          <input type="tel" id="phone-input" placeholder="+7 (___) ___-__-__" maxlength="18">
+        </label>
+        <button type="submit" class="cta__submit">Записаться на прием</button>
+      </form>
+      <label class="cta__agree">
+        <input type="checkbox" checked>
+        <span>Я даю свое согласие на <span class="cta__link">обработку персональных данных</span></span>
+      </label>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>

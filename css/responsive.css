@@ -1,0 +1,199 @@
+@media (max-width: 1024px) {
+  .cta {
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .cta::before {
+    clip-path: none;
+    border-radius: 32px;
+  }
+  
+  .cta__photo {
+    flex: none;
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+    justify-content: center;
+    clip-path: none; 
+  }
+  
+  .cta__photo img {
+    width: 100%;
+    height: 100%;
+    object-position: center top;
+    transform: none;
+  }
+
+  .cta__content {
+    padding: 0 30px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .services {
+    padding: 20px 16px 40px;
+  }
+
+  .services__title {
+    font-size: 24px;
+  }
+
+  .services__controls {
+    display: none; 
+  }
+
+  .card {
+    flex: 0 0 75%; 
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .card__image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    clip-path: none; 
+    overflow: hidden;
+  }
+
+  .card__label {
+    left: 16px;
+    bottom: 16px;
+    font-size: 18px;
+  }
+
+  .card__actions {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 12px;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    z-index: 3;
+  }
+
+  .card__btn {
+    flex: 1; 
+    height: 40px;
+    padding: 0 16px;
+    font-size: 13px;
+    justify-content: center; 
+  }
+
+  .card__arrow-btn {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .card__arrow {
+    font-size: 18px;
+  }
+
+  .services__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cta {
+    margin-top: 40px;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    padding-top: 40px;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .cta::before {
+    clip-path: path('M 40 15 Q 40 0 55 0 L 100% 0 L 100% calc(100% - 55px) Q 100% calc(100% - 40px) calc(100% - 55px) calc(100% - 40px) Q calc(100% - 70px) calc(100% - 40px) calc(100% - 70px) 100% L 0 100% L 0 40px Q 0 25 15 40 Z');
+    border-radius: 24px; 
+    z-index: 1;
+  }
+
+  .cta__content {
+    padding: 0 24px 30px; 
+    order: 1;
+    z-index: 2;
+  }
+
+  .cta__title {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .cta__subtitle {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 16px; 
+  }
+
+  .cta__form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px; 
+    margin-bottom: 12px; /
+  }
+
+  .cta__field {
+    max-width: 100%;
+  }
+
+  .cta__field input {
+    padding: 14px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .cta__submit {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    border-radius: 99px;
+    margin-top: 10px; 
+  }
+
+  .cta__agree {
+    font-size: 10px;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .cta__agree input {
+    margin-top: 2px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .cta__photo {
+    flex: none;
+    width: 100%;
+    height: 320px; 
+    margin: 0;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
+    clip-path: path('M 0 0 L 100% 0 L 100% calc(100% - 55px) Q 100% calc(100% - 40px) calc(100% - 55px) calc(100% - 40px) Q calc(100% - 70px) calc(100% - 40px) calc(100% - 70px) 100% L 0 100% Z');
+  }
+
+  .cta__photo img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transform: none; 
+    border-radius: 0;
+  }
+}
